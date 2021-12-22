@@ -1,0 +1,17 @@
+<swiper 
+  class="carousels" 
+  interval="{{3000}}" 
+  autoplay="{{true}}"
+  circular="{{true}}"
+  indicator-dots="{{true}}" indicator-active-color="#f9342e">
+  <swiper-item wx:for="{{carousels}}">
+    <image src="{{item.url}}" mode="scaleToFill"/>
+  </swiper-item>
+</swiper>
+<view class="list">
+  <navigator
+    class="list-item list_bg"
+    wx:for="{{list}}"
+    hover-class="list-item-hover"
+    url="/pages/chapter/chapter?name={{item.name}}&cid={{item.cid}}">{{item.name}}</navigator>
+</view>

@@ -1,0 +1,11 @@
+<view class="title">{{name}}</view>
+<view class="list">
+  <navigator 
+    class="list-item" 
+    wx:for="{{list}}" 
+    hover-class="list-item-hover" 
+    url="/pages/detail/detail?cid={{item.cid}}&name={{item.name}}">
+    <view class="list-item-title">{{item.name}}</view>
+    <view class="{{'list-item-state ' + (item.hasExam?'checked':'')}}"></view>
+  </navigator>
+</view>

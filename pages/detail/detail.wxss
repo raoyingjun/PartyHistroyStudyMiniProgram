@@ -1,0 +1,21 @@
+page {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.title {
+  margin: 30rpx;
+  font-weight: bold;
+  font-size: 46rpx;
+  text-align: center;
+}
+
+.complete {
+  margin: 40rpx auto;
+  width: 240rpx;
+  line-height: 70rpx;
+  background-image: linear-gradient(to right, #ffe5a4, #d0a534);
+  color: white;
+  border-radius: 12rpx;
+  text-align: center;
+}

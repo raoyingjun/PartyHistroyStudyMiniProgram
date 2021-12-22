@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/changepwd/changepwd",
+    "pages/my_list/my_list",
+    "pages/login/login",
+    "pages/detail/detail",
+    "pages/my/my",
+    "pages/my_list_detail/my_list_detail",
+    "pages/register/register",
+    "pages/findpwd/findpwd",
+    "pages/intro/intro",
+    "pages/chapter/chapter",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f9342e",
+    "navigationBarTitleText": "深圳鹏城技师学院党史学习",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#f9342e",
+    "color": "#bfbfbf",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/index.png",
+        "selectedIconPath": "/images/index_active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/images/my.png",
+        "selectedIconPath": "/images/my_active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

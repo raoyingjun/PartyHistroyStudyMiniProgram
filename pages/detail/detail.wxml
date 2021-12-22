@@ -1,0 +1,4 @@
+<view class="title">{{name}}</view>
+<rich-text nodes="{{content}}"></rich-text>
+<view class="complete" hover-class="btn-hover" bindtap="openCard">答题</view>
+<card wx:if="{{questions.length}}" hidden="{{hidden}}" bindclose="closeCard" questions="{{questions}}" cid="{{cid}}"/>

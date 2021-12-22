@@ -1,0 +1,153 @@
+/* 单选复选框样式 */
+/*复选框外框样式*/
+checkbox .wx-checkbox-input {
+  width: 40rpx;
+  height: 40rpx;
+  border: 2rpx solid #999;
+  border-radius: 5rpx;
+  flex-shrink: 0;
+}
+
+/*复选框外框选中样式*/
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border-color: #f9342e;
+}
+
+/*复选框选中后内部样式*/
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 60%;
+  height: 60%;
+  background: #f9342e;
+  border-radius: 5rpx;
+  content: '';
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+/*radio未选中时样式 */
+radio .wx-radio-input {
+  width: 40rpx;
+  height: 40rpx;
+  border: 2rpx solid #999;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: #f9342e !important;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 60%;
+  height: 60%;
+  background: #f9342e;
+  border-radius: 100%;
+  content: '';
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+
+radio, checkbox {
+  display: block;
+  /* background-color: red; */
+  margin: 30rpx 0;
+  font-size:30rpx;
+}
+
+/* 卡片样式 */
+.container {
+  background-color: rgba(0, 0, 0, .5);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  height: 70%;
+  border-radius: 12rpx;
+  background-color: white;
+  padding: 30rpx;
+  box-sizing: border-box;
+  overflow: auto
+}
+
+.card-title {
+  color: #f9342e;
+  font-size: 40rpx;
+  text-align: center;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.card-question {
+  font-size: 30rpx;
+  margin: 40rpx auto;
+  line-height: 46rpx;
+}
+
+.card-question-type {
+  border: 1px solid #f9342e;
+  background-color: #ffe6e5;
+  color: #f9342e;
+  font-size: 22rpx;
+  margin-right: 15rpx;
+  padding: 5rpx;
+  vertical-align: top;
+  border-radius: 12rpx;
+}
+
+.card-close {
+  background-color: white;
+  width: 80rpx;
+  line-height: 80rpx;
+  margin-top: 20rpx;
+  text-align: center;
+  font-size: 40rpx;
+  border-radius: 50%;
+}
+
+.card-btns {
+  display: flex;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.card-btn {
+  border: 1px solid #f9342e;
+  margin: 0 20rpx;
+  padding: 10rpx 40rpx;
+  border-radius: 12rpx;
+  background-color: #f9342e;
+  font-size: 28rpx;
+  color: white;
+}
+
+.disabled {
+  pointer-events: none
+}
+
+.msg {
+  font-size: 26rpx;
+  margin: 20rpx 40rpx;
+}
+
+.plain {
+  background-color: #ffefee;
+  color: #f9342e
+}

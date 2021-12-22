@@ -1,0 +1,35 @@
+
+.row {
+  padding: 10px;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  align-items: center;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.row.row-header {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.col-btn {
+  margin-left: 10rpx;
+  width: 160rpx;
+  line-height: 50rpx;
+  text-align: center;
+  color: white;
+  border-radius: 6rpx;
+  background-color: #ffe0e0;
+  border: 1px solid #ff4747;
+  color: #ff4747;
+}
+
+
+.loading-msg {
+  text-align: center;
+  font-size: 26rpx;
+  color: #888888;
+  margin: 15rpx 0;
+}

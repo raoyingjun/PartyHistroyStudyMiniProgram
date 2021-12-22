@@ -1,0 +1,2 @@
+<image src="/images/intro.jpg" class="intro"/>
+<view class="jump" bindtap="jumpToLogin">{{countdown}} 跳过</view>

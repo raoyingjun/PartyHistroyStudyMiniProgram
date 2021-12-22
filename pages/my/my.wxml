@@ -1,0 +1,27 @@
+<image src="/images/bannar.jpg" mode="widthFix" class="bannar" />
+<view class="list">
+  <navigator class="list-item" hover-class="list-item-hover" url="/pages/my_list/my_list">
+    <image class="list-item-icon" src="/images/score.png" mode="widthFix"/>
+    答题记录
+    <image class="list-item-arrow" src="/images/arrow.png" mode="widthFix" />
+  </navigator>
+  <navigator class="list-item" hover-class="list-item-hover" url="/pages/changepwd/changepwd">
+    <image class="list-item-icon" src="/images/change_password.png" mode="widthFix" />
+    修改密码
+    <image class="list-item-arrow" src="/images/arrow.png" mode="widthFix" />
+  </navigator>
+  <button open-type="feedback" class="feedback">
+    <navigator class="list-item" hover-class="list-item-hover">
+      <image class="list-item-icon" src="/images/feedback.png" mode="widthFix" />
+      意见反馈
+      <image class="list-item-arrow" src="/images/arrow.png" mode="widthFix" />
+    </navigator>
+  </button>
+  <navigator class="list-item" hover-class="list-item-hover" bindtap="showLogoutActionsheet">
+    <image class="list-item-icon" src="/images/logout.png" mode="widthFix" />
+    退出登录
+    <image class="list-item-arrow" src="/images/arrow.png" mode="widthFix" />
+  </navigator>
+</view>
+<mp-actionSheet bindactiontap="confirmLogout" show="{{showActionsheet}}" actions="{{[{text: '退出登录',type: 'warn',value: 1}]}}" title="确认退出登录吗？">
+</mp-actionSheet>

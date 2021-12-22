@@ -1,0 +1,47 @@
+page {
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.bannar {
+  width: 100%;
+}
+
+.list {
+ margin-top: 40rpx;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  font-size: 28rpx;
+}
+
+.list-item:not(:last-child) {
+  border-bottom: 1px solid rgb(235, 235, 235);
+}
+
+.list-item-icon {
+  width: 40rpx;
+  margin-right: 15rpx;
+}
+
+.list-item-arrow {
+  margin-left: auto;
+  width: 26rpx;
+}
+
+.list-item-hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.feedback {
+  border-bottom: 1px solid rgb(235, 235, 235);
+  border-radius: 0;
+  background-color: transparent !important;
+  width: initial !important;
+  padding: initial !important;
+  font-weight: initial !important;
+  text-align: initial !important;
+}

@@ -1,0 +1,35 @@
+
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 28rpx;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.row.row-header {
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.col {
+  float: left;
+}
+
+.col-3 {
+  width: 30%;
+  text-align: center;
+}
+
+.col-7 {
+  width: 70%
+}
+
+
+.loading-msg {
+  text-align: center;
+  font-size: 26rpx;
+  color: #888888;
+  margin: 15rpx 0;
+}

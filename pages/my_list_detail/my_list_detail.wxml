@@ -1,0 +1,11 @@
+<view class="main">
+  <view class="row row-header">
+    <view class="col col-7">子章节名称</view>
+    <view class="col col-3">正确量/总题量</view>
+  </view>
+  <view class="row" wx:for="{{list}}">
+    <view class="col col-7">{{item.chapterName}}</view>
+    <view class="col col-3">{{item.createTime?(item.rightSize+'/'+item.questionCount):'未作答'}}</view>
+  </view>
+  <view class="loading-msg">{{loadingMsg}}</view>
+</view>
