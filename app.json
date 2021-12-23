@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/intro/intro",
     "pages/index/index",
     "pages/changepwd/changepwd",
     "pages/my_list/my_list",
@@ -9,7 +10,6 @@
     "pages/my_list_detail/my_list_detail",
     "pages/register/register",
     "pages/findpwd/findpwd",
-    "pages/intro/intro",
     "pages/chapter/chapter",
     "pages/logs/logs"
   ],
